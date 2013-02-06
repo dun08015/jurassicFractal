@@ -1,12 +1,12 @@
 void setup() {
-  size(480, 480);
+  size(500, 500);
 }
 
 void draw() {
-  
-  line(width/2,100,width/2,200);
+  rect(width/2, height/2, 1, 100);  //rectangles work better than lines for this
   pushMatrix();
-rotate(PI/4.0);
-  line(width/2,100,width/2,200);
+  translate(width/2,height/2+100);
+  rotate(radians(90));
+  rect(0, 0, 1, 100);
   popMatrix();
 }
