@@ -12,12 +12,7 @@ void setup() {
 }
 
 void draw() {
-  recurse();
-}
-
-void recurse(){
-  
-  for(int i= arr.size()-1;i>=0;i--){
+    for(int i= arr.size()-1;i>=0;i--){
     Coord coord1=(Coord) arr.get(i);
     x1=coord1.getX1();
     y1=coord1.getY1();
@@ -56,8 +51,6 @@ void recurse(){
     coord1.setX2(x2+transX);
     coord1.setY2(y2+transY);
   }
-  
-  
 }
 
 
