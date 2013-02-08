@@ -34,7 +34,6 @@ void draw() {
     temp=x2;
     x2=y2;
     y2=500-temp;
-    line(x1,y1,x2,y2);
     arr.add(new Coord(x1,y1,x2,y2));
     transX=250-x1;
   transY=250-y1;
